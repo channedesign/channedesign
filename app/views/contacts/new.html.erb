@@ -14,7 +14,7 @@
 			      <span>and I wanted to ask you&nbsp;</span>
 			      <%= f.input :message, :as => :text, :required => true, label: false, placeholder: "Something something here", input_html: { class: 'form_input text_input' } %>
 			      <span>.</span> <br /><br />
-			      <span>You can reach me at&nbsp;</span>
+			      <span class="testy">You can reach me at&nbsp;</span>
 
 			      <%= f.input :email, :required => true, label: false, placeholder: "Your email here", input_html: { class: 'form_input email_input' } %>
 			     <span>.</span>
@@ -29,13 +29,6 @@
 					</button>
 			      </div>
 			    <% end %>
-			    <script>
-			    	// Auto-resize contact form
-	var $formInput = $(".form_input");
-	$formInput.autosizeInput();
-	var $textInput = $(".text_input");
-	autosize($textInput);
-			    </script>
 			</div>
 		</div>
 		<div class="row marginBottom50">
