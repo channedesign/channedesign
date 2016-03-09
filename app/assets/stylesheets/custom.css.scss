@@ -42,6 +42,11 @@ a:hover {
 	margin-bottom: 50px;
 }
 
+.marginTopBottom150 {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
 .marginTopBottom100 {
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -629,6 +634,7 @@ a:hover {
 .map_container {
 	width: 80%;
 	position: relative;
+	margin: 0 auto;
 }
 
 #map {
@@ -696,7 +702,7 @@ a:hover {
 }	
 
 .testimonials_text {
-	font-size: 3em;
+	font-size: 300%;
 }
 
 .testimonials_text_signature {
@@ -750,6 +756,9 @@ footer {
 /*----------------  767  ------------------*/
 
 @media (max-width: 767px) {
+	.hide_in_xs {
+		display: none;
+	}
 	.contact_form {
 	  	line-height: 20px;
 	  	font-size: 2em;
@@ -764,7 +773,6 @@ footer {
 	.text_input {
 		line-height: 35px;
 		margin-top: -25px;
-		top: 25px;
 		height: 30px;
 	  	width: 350px;
 	  	min-width: 350px;
@@ -773,8 +781,66 @@ footer {
 	  	width: 220px;
 	  	min-width: 220px;
 	}
+	.testimonials_carousel p {
+		padding-left: 40px;
+		padding-right: 5px;
+	}
+	#contacts .marginTopBottom150 {
+		margin-bottom: 20px;
+	}	
+	.quote {
+		font-size: 300%;
+	}
+	.quote_left {
+		left: 0%;
+	}
+	.quote_right {
+		right: 0%;
+	}
 }
 
 
+/*----------------  600  ------------------*/
+
+@media (max-width: 600px) {
+	.contact_form {
+	  	line-height: 20px;
+	  	font-size: 1.5em;
+	}
+	.form_input {
+		margin: 20px 0 20px 0;
+	}
+	.name_input {
+	  	width: 160px;
+	  	min-width: 160px;
+	}
+	.text_input {
+		line-height: 25px;
+		margin-top: -22px;
+		top: 20px;
+		height: 20px;
+	  	width: 280px;
+	  	min-width: 280px;
+	}
+	.email_input {
+	  	width: 180px;
+	  	min-width: 180px;
+	}
+	::-webkit-input-placeholder {
+   		padding-top: 3px;
+	}
+	:-moz-placeholder { /* Firefox 18- */
+	   	padding-top: 3px; 
+	}
+	::-moz-placeholder {  /* Firefox 19+ */
+	   	padding-top: 3px;  
+	}
+	:-ms-input-placeholder {  
+	   	padding-top: 3px; 
+	}
+	.testimonials_text {
+		font-size: 200%;
+	}
+}
 
 

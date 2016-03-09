@@ -148,8 +148,8 @@ $(document).ready(function() {
 	var contactsTween = new TimelineMax()
 		.from($("#map"), 1, { opacity: 0, left: -50 })
 		.from($(".fleche_haut1"), 0.2, { opacity: 0, rotation: -360, bottom: -50 }, "-=0.5")
-		.from($(".fleche_haut2"), 0.2, { opacity: 0, rotation: 360, right: -100 })
-		.from($(".fleche_haut3"), 0.2, { opacity: 0, rotation: -360, top: -100 })
+		.from($(".fleche_haut2"), 0.2, { opacity: 0, rotation: 360, right: -50 })
+		.from($(".fleche_haut3"), 0.2, { opacity: 0, rotation: -360, top: -50 })
 	var contactsScene = new ScrollMagic.Scene({ triggerElement: "#contacts", offset: 350 })
 								.setTween(contactsTween)
 								.addTo(controller);
@@ -279,6 +279,6 @@ $(document).ready(function() {
 	  }
 	};
 
-	
+
 			
 });

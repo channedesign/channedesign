@@ -14,7 +14,7 @@
 			      <span>and I wanted to ask you&nbsp;</span>
 			      <%= f.input :message, :as => :text, :required => true, label: false, placeholder: "Something something here", input_html: { class: 'form_input text_input' } %>
 			      <span>.</span> <br /><br />
-			      <span class="testy">You can reach me at&nbsp;</span>
+			      <span>You can reach me at&nbsp;</span>
 
 			      <%= f.input :email, :required => true, label: false, placeholder: "Your email here", input_html: { class: 'form_input email_input' } %>
 			     <span>.</span>
@@ -33,15 +33,15 @@
 		</div>
 		<div class="row marginBottom50">
 			<div class="col-sm-6">
-				<p class="lead text-left">I'm currently somewhere around here:</p><br>
+				<p class="lead">I'm currently somewhere around here:</p><br>
 				<div class="map_container">
 			  		<div id="map"></div>
 			  		<%= image_tag("flechehaut1.png", class: "fleche_haut fleche_haut1") %>
 			  		<%= image_tag("flechehaut3.png", class: "fleche_haut fleche_haut3") %>
-			  		<%= image_tag("flechehaut2.png", class: "fleche_haut fleche_haut2") %>
+			  		<%= image_tag("flechehaut2.png", class: "fleche_haut fleche_haut2 hide_in_xs") %>
 				</div>
 			</div>
-			<div class="col-sm-6 marginTopBottom100">
+			<div class="col-sm-6 marginTopBottom150">
 				<p class="lead">Availability Notices: <span style="font-size:0.7em; color:#CDF4CE;">Booked until end of March!</span></p>
 				<%= mail_to("channe@channedesign.com", (fa_icon "envelope 2x") + " channe@channedesign.com", class: "mail_to") %>
 			</div>
