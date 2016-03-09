@@ -1,0 +1,2 @@
+class WorkStepsController < ApplicationController
+end

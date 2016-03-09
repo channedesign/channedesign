@@ -1,0 +1,31 @@
+<div id="<%= name %>Modal" class="modal fade" role="dialog">
+  	<div class="modal-dialog modal-dialog-website">
+	    <div class="modal-content">
+	      <div class="modal-header text-center <%= name %>Header modalWebHeader">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h2 class="modal-title marginTop50"><%= title %></h2>
+		        <h4>Website</h4>
+	    	</div>
+	    	<div class="modal-body text-left">
+		      	<p class="lead">Why</p>
+		      	<p><%= why_text %></p>
+		      	<p class="lead">Design</p>
+		      	<p><%= design_text %></p>
+		      	<p class="lead">Features</p>
+		      	<p><%= features_text %></p>
+		        <p class="lead">Language utilised for this project</p>
+		        <div class="text-center">
+		        	<%= image_tag("html5.png", class: "logo") %>
+			      	<%= image_tag("css3.png", class: "logo") %>
+			      	<%= image_tag("jquery.png", class: "logo") %>
+			      	<%= image_tag("bootstrap.png", class: "logoBootstrap") %>
+			      	<%= image_tag("rubyonrails.png", class: "logoROR") %>
+			    </div>
+	    	</div>
+	    	<div class="modal-footer">
+	    		<%= link_to("Visit Website", url, target: "_blank", class: "btn btn-default") %>
+		        <%= link_to("Close", "", data: { dismiss: "modal" }, class: "btn btn-default") %>
+		    </div>
+	    </div>
+  	</div>
+</div>

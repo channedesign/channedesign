@@ -1,0 +1,19 @@
+<div id="work_steps">
+	<div class="container">
+		<%= render "shared/title_div", title: "Working with Channe", text: "To craft your idea we will be following those 6 easy steps, of course every projects are unique so I'm also flexible and can adapt to your needs." %>
+		
+		<div class="work_step_circuit_div">
+			<%= image_tag("WorkStepsCircuit.jpg", class: "image_100_width") %>
+			
+			<%= render "work_steps/circle_div", image: "MeetupCercle.png", image_back: "BackCercleMeetup.png", num: 1 %>
+			<%= render "work_steps/circle_div", image: "ProjectCercle.png", image_back: "BackCercleProject.png", num: 2 %>
+			<%= render "work_steps/circle_div", image: "DesignCercle.png", image_back: "BackCercleDesign.png", num: 3 %>
+			<%= render "work_steps/circle_div", image: "CodingCercle.png", image_back: "BackCercleCoding.png", num: 4 %>
+			<%= render "work_steps/circle_div", image: "PromoteCercle.png", image_back: "BackCerclePromote.png", num: 5 %>
+			<%= render "work_steps/circle_div", image: "MaintenanceCercle.png", image_back: "BackCercleMaintenance.png", num: 6 %>
+
+			<%= image_tag("Iphone.png", class: "iphone_pic") %>
+			<%= image_tag("Ipad.png", class: "ipad_pic") %>
+		</div>
+	</div>
+</div>

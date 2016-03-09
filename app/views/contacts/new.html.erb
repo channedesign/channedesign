@@ -1,0 +1,57 @@
+<div id="contacts" class="text-center">
+	<div class="container">
+		<div class=" marginTopBottom100 contacts_anchor">
+			<div class="msg_success">
+				<h2>Thank you!</h2>
+				<p class="lead">Your message was sent successfully, Channe will contact you soon!</p>
+			</div>
+			<div class="contact_form">
+				<%= simple_form_for @contact, html: {class: 'form-inline' }, wrapper: :customized_form, remote: true  do |f| %>
+			      <p>Hey Channe,</p> <br /><span>My name is&nbsp;</span>
+
+			      <%= f.input :name, :required => true, label: false, placeholder: "Your name here", input_html: { class: 'form_input name_input' } %>
+
+			      <span>and I wanted to ask you&nbsp;</span>
+			      <%= f.input :message, :as => :text, :required => true, label: false, placeholder: "Something something here", input_html: { class: 'form_input text_input' } %>
+			      <span>.</span> <br /><br />
+			      <span>You can reach me at&nbsp;</span>
+
+			      <%= f.input :email, :required => true, label: false, placeholder: "Your email here", input_html: { class: 'form_input email_input' } %>
+			     <span>.</span>
+			      <div class= "hidden">
+			        <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+			      </div>
+			      <br />
+			      <div class='uil-ripple-css' style='transform:scale(0.35);'><div></div><div></div></div>
+			      <div>
+			        <button type="submit" class="btn btn-default contacts_submit_btn">
+  						<%= fa_icon "paper-plane-o 2x" %>
+					</button>
+			      </div>
+			    <% end %>
+			    <script>
+			    	// Auto-resize contact form
+	var $formInput = $(".form_input");
+	$formInput.autosizeInput();
+	var $textInput = $(".text_input");
+	autosize($textInput);
+			    </script>
+			</div>
+		</div>
+		<div class="row marginBottom50">
+			<div class="col-sm-6">
+				<p class="lead text-left">I'm currently somewhere around here:</p><br>
+				<div class="map_container">
+			  		<div id="map"></div>
+			  		<%= image_tag("flechehaut1.png", class: "fleche_haut fleche_haut1") %>
+			  		<%= image_tag("flechehaut3.png", class: "fleche_haut fleche_haut3") %>
+			  		<%= image_tag("flechehaut2.png", class: "fleche_haut fleche_haut2") %>
+				</div>
+			</div>
+			<div class="col-sm-6 marginTopBottom100">
+				<p class="lead">Availability Notices: <span style="font-size:0.7em; color:#CDF4CE;">Booked until end of March!</span></p>
+				<%= mail_to("channe@channedesign.com", (fa_icon "envelope 2x") + " channe@channedesign.com", class: "mail_to") %>
+			</div>
+		</div>
+	</div>
+</div>

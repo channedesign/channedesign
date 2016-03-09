@@ -1,0 +1,730 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+/*
+green = #CDF4CE
+dark-green = #7FA783
+purple = #979EAF
+blue = #DEFAF6
+*/
+
+
+/*----------------  General  ------------------*/
+
+a {
+	color: #979EAF;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.hidden_div {
+	display: none;
+}
+
+.image_100_width {
+	width: 100%;
+}
+
+.marginTop100 {
+	margin-top: 100px;
+}
+
+.marginTop50 {
+	margin-top: 50px;
+}
+
+.marginBottom50 {
+	margin-bottom: 50px;
+}
+
+.marginTopBottom100 {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.title {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+/*----------------  Admins  ------------------*/
+
+/*------------------     Shared   ---------------------*/
+
+.title h1 {
+	font-weight: 200;
+	font-size: 4em;
+	letter-spacing: 3px;
+}
+
+/*------------------     Nav   ---------------------*/
+
+#nav {
+	position: fixed;
+	top: 25%;
+	left: 1%;
+	z-index: 9999;
+}
+
+.roundNav {
+	position: relative;
+	left: 0;
+	height: 50px;
+	width: 50px;
+	border: 2px solid rgba(255, 255, 255, 0);
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.roundNav:hover {
+	background: #979EAF;
+	color: rgba(255, 255, 255, 1);
+}
+
+#homeIcon {
+	position: relative;
+	left: 10px;
+	top: 8px;
+}
+
+#serviceIcon {
+	position: relative;
+	left: 7px;
+	top: 9px;
+}
+
+#workIcon {
+	position: relative;
+	left: 7px;
+	top: 9px;
+}
+
+#portfolioIcon {
+	position: relative;
+	left:9px;
+	top:9px;
+}
+
+#aboutIcon {
+	position:relative;
+	left:13px;
+	top:8px;
+}
+
+#contactIcon {
+	position:relative;
+	left:9px;
+	top:8px;
+}
+
+.active {
+	background: #979EAF;
+	color: rgba(255, 255, 255, 1);
+}
+
+
+
+/*----------------  Home  ------------------*/
+
+.background_image {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+}
+
+.background_image  img {
+	position: absolute;
+	z-index: -1;
+}
+
+.background_image  .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.logo_text_circle {
+	width: 37%;
+	top: 2%;
+	left: 32.5%;
+}
+
+.logo_text {
+	width: 28%;
+	top: 25%;
+}
+
+.logo_text_channe {
+	left: 4%;
+}
+
+.logo_text_design {
+	right: 2%;
+}
+
+/*----------------  Portfolios  ------------------*/
+
+#portfolios {
+	background-color: #fff;
+}
+
+/*.web_border {
+	border: 3px solid #979EAF;
+}
+
+.logo_border {
+	border: 3px solid #714624;
+}*/
+
+#portfolios img {
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.portfolios_dots {
+	position: relative;
+	top: 10px;
+	font-size: 3em;
+}
+
+#portfolios .web {
+	color: #979EAF;
+}
+
+#portfolios .logo {
+	color: #7FA783;
+}
+
+#portfolios .text-muted {
+	position: relative;
+	top: -30px;
+}
+
+.logo {
+	width:60px;
+	height:65px;
+}
+
+.logoBootstrap {
+	width:40px;
+	height:45px;
+}
+
+.logoROR {
+	margin-left: 15px;
+	width: 34px;
+	height: 40px;
+}
+
+.modal-dialog-website {
+	width: 60%;
+}
+
+.modal-dialog-logo {
+	width: 50%;
+}
+
+.modal-body {
+	font-weight: 250;
+}
+
+.modal-footer {
+	border-top:none;
+	text-align: center;
+}
+
+.modalWebHeader {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	height: 200px;
+}
+
+.VaraReeseHeader {
+	color: #f5f5f5;
+	background-image: image-url("varaModal.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.MicchkaBellisuHeader {
+	color: #f5f5f5;
+	background-image: image-url("micchkaModal.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.SkiPandaHeader {
+	color: #f5f5f5;
+	background-image: image-url("gleeModal.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.CamilleSkubichJewelryHeader {
+	color: #505050;
+	background-image: image-url("skubichModal.jpg");
+	background-size: cover;
+	background-position: center bottom;
+}
+
+.CamilleSkubichJewelryHeader h2 {
+	margin-top: -10px;
+}
+
+.logoModal {
+	width: 100%;
+}
+
+.logo_header {
+	height: 100px;
+}
+
+.btn-default {
+	margin-top: 30px;
+	border: 1px solid #000;
+	background: none;
+}
+
+.modal-dialog-website .btn-default:hover {
+	background: #979EAF;
+}
+
+.modal-dialog-logo .btn-default:hover {
+	background: #7FA783;
+}
+
+/*----------------  Services  ------------------*/
+#services {
+	background-color: #CDF4CE;
+}
+
+/*.background_transition {
+	height: 400px;
+	background-image: image-url("mountaincitylinesbg.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+}*/
+
+.services {
+	position: relative;
+}
+
+.services_pic {
+	position: absolute;
+	width: 20%;
+}
+
+.title_pic1 {
+	top: 12%;
+	left: 4.5%;
+	z-index: 2;
+	width: 15%;
+}
+
+.image_pic1 {
+	top: 5%;
+	left: 10%;
+	z-index: 1;
+	width: 30%;
+}
+
+.title_pic2 {
+	top: 3%;
+	left: 43%;
+}
+
+.image_pic2 {
+	top: 18%;
+	left: 40%;
+	width: 40%;
+	z-index: 1;
+}
+
+.title_pic3 {
+	top: 20%;
+	right: 2%;
+	width: 8%;
+	z-index: 2;
+}
+
+.image_pic3 {
+	top: 0%;
+	right: 0%;
+	width: 30%;
+	z-index: 1;
+}
+
+.title_pic4 {
+	bottom: 25%;
+	left: 5%;
+	z-index: 2;
+}
+
+.image_pic4 {
+	bottom: 0%;
+	left: 5%;
+	width: 25%;
+	z-index: 1;
+}
+
+.title_pic5 {
+	bottom: 2%;
+	left: 38%;
+	width: 25%;
+	z-index: 2;
+}
+
+.image_pic5 {
+	bottom: 4%;
+	left: 40%;
+	width: 30%;
+	z-index: 1;
+}
+
+.title_pic6 {
+	bottom: 20%;
+	right: 3%;
+	width: 15%;
+	z-index: 2;
+}
+
+.image_pic6 {
+	bottom: 0%;
+	right: 0%;
+	width: 30%;
+	z-index: 1;
+}
+
+.service_box {
+	position: absolute;
+	width: 23%;
+	padding: 20px;
+	opacity: 0;
+}
+
+.service_web_design_div .service_box {
+	top: 10%;
+	left: 7%;
+}
+
+.service_responsive_div .service_box {
+	top: 9%;
+	left: 41%;
+}
+
+.service_startup_div .service_box {
+	top: 15%;
+	right: 5%;
+}
+
+.service_web_dev_div .service_box {
+	bottom: 15%;
+	left: 8%;
+}
+
+.service_app_dev_div .service_box {
+	bottom: 7%;
+	left: 40%;
+}
+
+.service_branding_div .service_box {
+	bottom: 15%;
+	right: 5%;
+}
+
+/*----------------  Work Steps  ------------------*/
+
+#work_steps {
+	background-color: #fff;
+	
+}
+
+.work_step_circuit_div {
+	position: relative;
+}
+
+.work_steps_circle {
+	width: 27%;
+	position: absolute;
+}
+
+.iphone_pic {
+	width: 5%;
+	position: absolute;
+	bottom: 9%;
+	left: 2%;
+}
+
+.ipad_pic {
+	width: 10%;
+	position: absolute;
+	bottom: 7%;
+	left: 23%;
+}
+
+.work_steps1 {
+	top: 0%;
+	left: 1%;
+}
+
+.work_steps2 {
+	top: 0%;
+	left: 35%;
+}
+
+.work_steps3 {
+	top: 0%;
+	right: 5%;
+}
+
+.work_steps4 {
+	top: 33.7%;
+	right: 22%;
+}
+
+.work_steps5 {
+	top: 33.7%;
+	left: 18%;
+}
+
+.work_steps6 {
+	bottom: 3%;
+	left: 35%;
+}
+
+.front {
+	z-index: 1;
+}
+
+.back {
+	z-index: 0;
+}
+
+/*----------------  Abouts  ------------------*/
+
+#abouts {
+	background-color: #fff;
+}
+
+.profile_pic {
+	position: relative;
+	width: 60%;
+}
+
+.this_guy_arrow_pic {
+	position: relative;
+	top: -70px;
+	width: 40%;
+}
+
+/*----------------  Contacts  ------------------*/
+
+#contacts {
+	background-color: #979EAF;
+	color: white;
+}
+
+.contacts_anchor {
+	position: relative;
+}
+
+.contact_form {
+  	line-height: 30px;
+  	font-size: 2.5em;
+  	opacity: 1;
+  	position: relative;
+  	z-index: 2;
+}
+
+.form_input {
+	margin: 25px 0 25px 0;
+	background-color: #979EAF;
+	color: #CDF4CE;
+	display: inline-block;
+	border: none;
+	border-radius: 0%;
+	border-bottom: 1px dashed #f5f5f5;
+	outline: none;
+	-webkit-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
+	-moz-box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
+	box-shadow: inset 0px 0px 0px 0px rgba(0,0,0,0);
+}
+
+.form-inline div { 
+  display: inline-block; 
+}
+
+.name_input {
+  	width: 250px;
+  	min-width: 250px;
+}
+
+.text_input {
+	line-height: 45px;
+	margin-top: -35px;
+	position: relative;
+	top: 35px;
+	height: 40px;
+  	resize: none;
+  	width: 450px;
+  	min-width: 450px;
+}
+
+.email_input {
+  	width: 260px;
+  	min-width: 260px;
+}
+
+::-webkit-input-placeholder {
+   	padding-top: 6px;
+   	text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   	padding-top: 6px; 
+   	text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   	padding-top: 6px;  
+   	text-align: center;
+}
+
+:-ms-input-placeholder {  
+   	padding-top: 6px; 
+   	text-align: center; 
+}
+
+.msg_success {
+	opacity: 0;
+	color: #CDF4CE;
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	z-index: 1;
+}
+
+.msg_success h2, .msg_success p {
+	position: relative;
+}
+
+.map_container {
+	width: 80%;
+	position: relative;
+}
+
+#map {
+	width: 100%;
+	height: 300px;
+	border: none;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+}
+
+.fleche_haut {
+	width: 30%;
+	height: 30%;
+	position: absolute;
+}
+
+.fleche_haut1 {
+	bottom: -20%;
+	left: 30%;
+}
+
+.fleche_haut3 {
+	top: -20%;
+	left: 30%;
+}
+
+.fleche_haut2 {
+	bottom: 30%;
+	right: -25%;
+}
+
+.mail_to {
+	color: #fff;
+}
+
+.mail_to:hover {
+	color: #CDF4CE;
+}
+
+.contact_form .btn-default {
+	color: #fff;
+}
+
+.contact_form .btn-default:hover {
+	color: #000;
+	background-color: #CDF4CE;
+}
+
+/*----------------  Testimonials  ------------------*/
+
+#testimonials, #testimonials div {
+	background-color: #fff;
+	color: #000;
+}
+
+.anchor_carousel {
+	position: relative;
+}
+
+.testimonials_carousel p {
+	font-weight: 100;
+	padding-left: 25px;
+	padding-right: 10px;
+}	
+
+.testimonials_text {
+	font-size: 3em;
+}
+
+.testimonials_text_signature {
+	font-size: 1.5em;
+}
+
+.quote {
+	position: absolute;
+	z-index: 1000;
+}
+
+.quote_left {
+	top: 10%;
+	left: -3%;
+}
+
+.quote_right {
+	bottom: 40%;
+	right: -3%;
+}
+
+.owl-dots {
+	padding-top: 30px;
+}
+
+/*----------------  Footer  ------------------*/
+
+footer {
+	background-color: #979EAF;
+	padding-top: 15px;
+	height: 40px;
+}
+
+
+
+
+
+
