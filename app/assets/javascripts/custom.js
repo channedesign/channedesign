@@ -139,7 +139,7 @@ $(document).ready(function() {
 	//--- Portfolios shadow animation
 	var $tm = TweenMax;
 	$(".portfolios_image").hover(function() {
-		$tm.to($(this), 0.3, { boxShadow: "10px 10px 10px" });	
+		$tm.to($(this), 0.3, { boxShadow: "15px 15px 15px" });	
 	}, function() {
 		$tm.to($(this), 0.3, { boxShadow: "0px 0px 0px" });	
 	});
@@ -163,11 +163,9 @@ $(document).ready(function() {
 	
 	$roundNav.hover(function(){
 		$tm.to($(this), 1, {rotation:360});
-		//$tm.to($(this), 0.3, { boxShadow: "0px 0px 1px 1px rgba(0,0,0,0.75)" });
 	},
 	function(){	
 		$tm.to($(this), 1, {rotation:-360});
-		//$tm.to($(this), 0.3, { boxShadow: "0px 0px 0px 0px rgba(0,0,0,0)" });	
 	});
 	// SmoothScroll plugin
 	$('#nav a').smoothScroll();
@@ -184,10 +182,8 @@ $(document).ready(function() {
 	      var item = $($(this).attr("href"));
 	      if (item.length) { return item; }
 	    });
-
-
 	// Bind to scroll
-	$(window).scroll(function(){
+	$(window).on("scroll", function(){
 	   // Get container scroll position
 	   var fromTop = $(this).scrollTop()+topMenuHeight;
 	   
@@ -205,7 +201,7 @@ $(document).ready(function() {
 	       // Set/remove active class
 	       menuItems
 	         .children().removeClass("active")
-	         .end().filter("[href=#"+id+"]").children().addClass("active");
+	         .end().filter('[href="#'+id+'"]').children().addClass("active");
 	   }                   
 	});
 	

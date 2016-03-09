@@ -11,13 +11,13 @@
 			<% @portfolios.each do |portfolio| %>
 				<% if portfolio.portfolio_type == "Web" %>
 					<div class="col-sm-6 marginBottom50">
-						<%= link_to(image_tag(portfolio.image, class: "image_100_width web_border portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ')}Modal" }) %>
+						<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ')}Modal" }) %>
 					</div>
 					<%= render "portfolios/modal_web", name: portfolio.title.delete(" "), title: portfolio.title, why_text: portfolio.why_text, design_text: portfolio.design_text.html_safe, features_text: portfolio.features_text, url:portfolio.url %>
 				<% end %>
 				<% if portfolio.portfolio_type == "Logo" || portfolio.portfolio_type == "BigLogo" %>
 					<div class="<%= portfolio.portfolio_type == 'Logo' ? 'col-sm-3' : 'col-sm-6' %> marginBottom50">
-						<%= link_to(image_tag(portfolio.image, class: "image_100_width logo_border portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ').delete("&")}LogoModal" }) %>
+						<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ').delete("&")}LogoModal" }) %>
 					</div>
 					<%= render "portfolios/modal_logo", name: portfolio.title.delete(" ").delete("&"), title: portfolio.title, image: portfolio.image_modal %>
 				<% end %>

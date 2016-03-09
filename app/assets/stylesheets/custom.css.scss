@@ -47,6 +47,11 @@ a:hover {
 	margin-bottom: 100px;
 }
 
+.marginTopBottom50 {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
 .title {
 	margin-top: 100px;
 	margin-bottom: 50px;
@@ -172,19 +177,24 @@ a:hover {
 	right: 2%;
 }
 
+.features {
+	background-color: #8097A2;
+}
+
+.features h1 {
+	font-weight: 200;
+	font-size: 4em;
+}
+
+.features .text-muted {
+	color: rgba(255, 255, 255, 0.7);
+}
+
 /*----------------  Portfolios  ------------------*/
 
 #portfolios {
 	background-color: #fff;
 }
-
-/*.web_border {
-	border: 3px solid #979EAF;
-}
-
-.logo_border {
-	border: 3px solid #714624;
-}*/
 
 #portfolios img {
 	border-radius: 10px;
