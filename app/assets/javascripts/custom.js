@@ -115,7 +115,7 @@ $(document).ready(function() {
 		});	
 	} else {
 		// Series of hover animation functions mobile
-		$(".service_web_design_div").click(function() {
+		$(".service_web_design_div").hover(function() {
 			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, left: "4%", rotation: -45, top: "5%" });
 			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "15%", left: "12%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1 });
@@ -125,7 +125,7 @@ $(document).ready(function() {
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0 });
 		});	
 
-		$(".service_responsive_div").click(function() {
+		$(".service_responsive_div").hover(function() {
 			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7 });
 			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "30%", zIndex: 0 });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1 });
@@ -135,7 +135,7 @@ $(document).ready(function() {
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0 });
 		});	
 
-		$(".service_startup_div").click(function() {
+		$(".service_startup_div").hover(function() {
 			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, right: "-1%", rotation: 90 });
 			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "-25%", right: "12%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
@@ -145,7 +145,7 @@ $(document).ready(function() {
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});	
 
-		$(".service_web_dev_div").click(function() {
+		$(".service_web_dev_div").hover(function() {
 			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, left: "20%", bottom: "35%", rotation: 45 });
 			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, left: "-12%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
@@ -155,7 +155,7 @@ $(document).ready(function() {
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});	
 
-		$(".service_app_dev_div").click(function() {
+		$(".service_app_dev_div").hover(function() {
 			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8 });
 			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, bottom: "20%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
@@ -165,7 +165,7 @@ $(document).ready(function() {
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});	
 
-		$(".service_branding_div").click(function() {
+		$(".service_branding_div").hover(function() {
 			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, bottom: "8%", right: "-1%" });
 			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, bottom: "10%", right: "10%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
