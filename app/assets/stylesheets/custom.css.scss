@@ -775,6 +775,9 @@ footer {
 		font-size: 3em;
 		letter-spacing: 2px;
 	}
+	.hidden_div {
+		display: block;
+	}
 	.services_pic {
 		position: relative;
 		width: 40%;
@@ -803,7 +806,7 @@ footer {
 	}
 	.title_pic3 {
 		top: 0%;
-		left: 250px;
+		left: 200px;
 		width: 28%;
 		z-index: 2;
 	}
@@ -838,7 +841,7 @@ footer {
 	}
 	.title_pic6 {
 		top: 0%;
-		left: 250px;
+		left: 200px;
 		width: 35%;
 		z-index: 2;
 	}
@@ -848,42 +851,40 @@ footer {
 		width: 50%;
 		z-index: 1;
 	}
-
 	.service_box {
 		position: absolute;
-		width: 23%;
+		width: 53%;
 		padding: 20px;
 		opacity: 0;
 	}
-
 	.service_web_design_div .service_box {
-		top: 10%;
-		left: 7%;
+		top: 0%;
+		left: 23%;
 	}
 
 	.service_responsive_div .service_box {
-		top: 9%;
-		left: 41%;
+		top: 16%;
+		left: 22%;
 	}
 
 	.service_startup_div .service_box {
-		top: 15%;
-		right: 5%;
+		top: 35%;
+		left: 20%;
 	}
 
 	.service_web_dev_div .service_box {
-		bottom: 15%;
-		left: 8%;
+		top: 50%;
+		left: 20%;
 	}
 
 	.service_app_dev_div .service_box {
-		bottom: 7%;
-		left: 40%;
+		top: 68.5%;
+		left: 22%;
 	}
 
 	.service_branding_div .service_box {
-		bottom: 15%;
-		right: 5%;
+		top: 85%;
+		left: 21%;
 	}
 	.contact_form {
 	  	line-height: 20px;
