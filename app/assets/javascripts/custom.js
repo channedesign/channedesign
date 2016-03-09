@@ -131,7 +131,7 @@ $(document).ready(function() {
 	//--- Abouts Animation	
 	var aboutsTween = new TimelineMax()
 		.from($(".profile_pic"), 0.5, { opacity: 0, top: -200 })
-		.from($(".this_guy_arrow_pic"), 0.5, { opacity: 0, right: -200, rotation: 720 })
+		.from($(".this_guy_arrow_pic"), 0.5, { opacity: 0, right: -50, rotation: 720 })
 	var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: -100 })
 								.setTween(aboutsTween)
 								.addTo(controller);						
