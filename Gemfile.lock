@@ -75,6 +75,7 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.6.0)
+    fastclick-rails (1.0.1)
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
     foreman (0.78.0)
@@ -199,6 +200,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise
+  fastclick-rails
   font-awesome-rails
   foreman
   gmaps4rails

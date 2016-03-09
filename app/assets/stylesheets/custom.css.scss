@@ -62,6 +62,10 @@ a:hover {
 	margin-bottom: 50px;
 }
 
+.hide_in_md {
+	display: none;
+}
+
 /*----------------  Admins  ------------------*/
 
 /*------------------     Shared   ---------------------*/
@@ -759,6 +763,128 @@ footer {
 	.hide_in_xs {
 		display: none;
 	}
+	.features h1 {
+		font-weight: 250;
+		font-size: 3em;
+	}
+	.title {
+		margin-top: 50px;
+	}
+	.title h1 {
+		font-weight: 250;
+		font-size: 3em;
+		letter-spacing: 2px;
+	}
+	.services_pic {
+		position: relative;
+		width: 40%;
+	}
+	.title_pic1 {
+		top: -120px;
+		left: 70px;
+		z-index: 2;
+		width: 35%;
+	}
+	.image_pic1 {
+		top: 0%;
+		left: 0%;
+		z-index: 1;
+		width: 50%;
+	}
+	.title_pic2 {
+		top: 0%;
+		left: 0%;
+	}
+	.image_pic2 {
+		top: 20px;
+		left: 50px;
+		width: 60%;
+		z-index: 1;
+	}
+	.title_pic3 {
+		top: 0%;
+		left: 250px;
+		width: 28%;
+		z-index: 2;
+	}
+	.image_pic3 {
+		top: 0%;
+		left: -130px;
+		width: 50%;
+		z-index: 1;
+	}
+	.title_pic4 {
+		top: -70px;
+		left: 100px;
+		z-index: 2;
+	}
+	.image_pic4 {
+		bottom: 0%;
+		left: -20px;
+		width: 55%;
+		z-index: 1;
+	}
+	.title_pic5 {
+		top: 20px;
+		left: 150px;
+		width: 45%;
+		z-index: 2;
+	}
+	.image_pic5 {
+		top: -50px;
+		left: -50px;
+		width: 50%;
+		z-index: 1;
+	}
+	.title_pic6 {
+		top: 0%;
+		left: 250px;
+		width: 35%;
+		z-index: 2;
+	}
+	.image_pic6 {
+		top: 0%;
+		left: -100px;
+		width: 50%;
+		z-index: 1;
+	}
+
+	.service_box {
+		position: absolute;
+		width: 23%;
+		padding: 20px;
+		opacity: 0;
+	}
+
+	.service_web_design_div .service_box {
+		top: 10%;
+		left: 7%;
+	}
+
+	.service_responsive_div .service_box {
+		top: 9%;
+		left: 41%;
+	}
+
+	.service_startup_div .service_box {
+		top: 15%;
+		right: 5%;
+	}
+
+	.service_web_dev_div .service_box {
+		bottom: 15%;
+		left: 8%;
+	}
+
+	.service_app_dev_div .service_box {
+		bottom: 7%;
+		left: 40%;
+	}
+
+	.service_branding_div .service_box {
+		bottom: 15%;
+		right: 5%;
+	}
 	.contact_form {
 	  	line-height: 20px;
 	  	font-size: 2em;
@@ -847,43 +973,8 @@ footer {
 /*----------------  400  ------------------*/
 
 @media (max-width: 400px) {
-	.contact_form {
-	  	line-height: 20px;
-	  	font-size: 1.5em;
-	}
-	.form_input {
-		margin: 20px 0 20px 0;
-	}
-	.name_input {
-	  	width: 160px;
-	  	min-width: 160px;
-	}
 	.text_input {
-		line-height: 25px;
-		margin-top: -22px;
 		top: 30px;
-		height: 20px;
-	  	width: 280px;
-	  	min-width: 280px;
-	}
-	.email_input {
-	  	width: 180px;
-	  	min-width: 180px;
-	}
-	::-webkit-input-placeholder {
-   		padding-top: 3px;
-	}
-	:-moz-placeholder { /* Firefox 18- */
-	   	padding-top: 3px; 
-	}
-	::-moz-placeholder {  /* Firefox 19+ */
-	   	padding-top: 3px;  
-	}
-	:-ms-input-placeholder {  
-	   	padding-top: 3px; 
-	}
-	.testimonials_text {
-		font-size: 200%;
 	}
 }
 

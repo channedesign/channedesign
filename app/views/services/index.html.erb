@@ -1,7 +1,8 @@
 <div id="services">
 	<%= render "shared/title_div", title: "Services", text: "I design & develop qaulity products to help small & medium level business." %>
 	<div class="services text-center">
-		<%= image_tag("GreenBackground.jpg", class: "image_100_width") %>
+		<%= image_tag("GreenBackground.jpg", class: "image_100_width hide_in_xs") %>
+		<%= image_tag("MobileGreenBackground.jpg", class: "image_100_width hide_in_md") %>
 		<%= render "services/services", div: "web_design_div", title_pic: "WebDesignTitle.png", num: "1", image: "MapCompas.png", direction: "bottom", image_text: "WebDesignText.png" %>
 
 		<%= render "services/services", div: "responsive_div", title_pic: "ResponsiveDesignTitle.png", num: "2", image: "Computer.png", direction: "top", image_text: "ResponsiveDesignText.png" %>
