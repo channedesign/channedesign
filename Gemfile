@@ -43,7 +43,6 @@ gem 'jquery-turbolinks'
 gem 'mail_form'
 gem 'gmaps4rails'
 gem 'fastclick-rails'
-gem 'jquery_mobile_rails'
 
 
 

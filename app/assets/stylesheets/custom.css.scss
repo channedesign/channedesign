@@ -198,12 +198,12 @@ a:hover {
 
 .logo_text_channe_mobile {
 	top: 50%;
-	left: 4%;
+	left: 10%;
 }
 
 .logo_text_design_mobile {
-	top: 60%;
-	right: 2%;
+	top: 63%;
+	right: 10%;
 }
 
 .features {
@@ -586,6 +586,16 @@ a:hover {
   	z-index: 2;
 }
 
+.contact_form_mobile .uil-ripple-css {
+	margin-left: 30%;
+}
+
+.contact_form_mobile {
+	display: none;
+	position: relative;
+	z-index: 2;
+}
+
 .form_input {
 	margin: 25px 0 25px 0;
 	background-color: #979EAF;
@@ -622,22 +632,22 @@ a:hover {
   	min-width: 260px;
 }
 
-::-webkit-input-placeholder {
+.contact_form ::-webkit-input-placeholder {
    	padding-top: 6px;
    	text-align: center;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+.contact_form :-moz-placeholder { /* Firefox 18- */
    	padding-top: 6px; 
    	text-align: center;
 }
 
-::-moz-placeholder {  /* Firefox 19+ */
+.contact_form ::-moz-placeholder {  /* Firefox 19+ */
    	padding-top: 6px;  
    	text-align: center;
 }
 
-:-ms-input-placeholder {  
+.contact_form :-ms-input-placeholder {  
    	padding-top: 6px; 
    	text-align: center; 
 }
@@ -699,12 +709,12 @@ a:hover {
 	color: #CDF4CE;
 }
 
-.contact_form .btn-default {
+.contact_form .btn-default, .contact_form_mobile .btn-default  {
 	color: #fff;
 	border: 1px solid #A9A9A9;
 }
 
-.contact_form .btn-default:hover {
+.contact_form .btn-default:hover, .contact_form_mobile .btn-default:hover {
 	color: #A9A9A9;
 	background-color: #CDF4CE;
 }
@@ -1009,20 +1019,38 @@ footer {
 	  	width: 180px;
 	  	min-width: 180px;
 	}
-	::-webkit-input-placeholder {
+	.contact_form ::-webkit-input-placeholder {
    		padding-top: 3px;
 	}
-	:-moz-placeholder { /* Firefox 18- */
+	.contact_form :-moz-placeholder { /* Firefox 18- */
 	   	padding-top: 3px; 
 	}
-	::-moz-placeholder {  /* Firefox 19+ */
+	.contact_form ::-moz-placeholder {  /* Firefox 19+ */
 	   	padding-top: 3px;  
 	}
-	:-ms-input-placeholder {  
+	.contact_form :-ms-input-placeholder {  
 	   	padding-top: 3px; 
 	}
 	.testimonials_text {
 		font-size: 200%;
+	}
+}
+
+/*----------------  510  ------------------*/
+
+@media (max-width: 510px) {
+	#contacts .marginTopBottom100 {
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+	.msg_success {
+		left: 5%;
+	}
+	.contact_form {
+		display: none;
+	}
+	.contact_form_mobile {
+		display: block;
 	}
 }
 

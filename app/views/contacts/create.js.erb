@@ -1,13 +1,18 @@
 var $tlContacts = new TimelineMax();
 // Remove input val and reload Div
 <% if @contact.save %>
-	$(".contact_form").load(location.href+" .contact_form>*","");
-	$tlContacts.to($(".contact_form"), 1, { opacity: 0 })
+	if ($(window).width() > 510) {
+		$(".contact_form").load(location.href+" .contact_form>*","");
+	} else {
+		$(".contact_form_mobile").load(location.href+" .contact_form_mobile>*","");
+	}
+	
+	$tlContacts.to($(".contact_form, .contact_form_mobile"), 1, { opacity: 0 })
 				.to($(".msg_success"), 1, { opacity: 1 }, "-=0.75")
 				.from($(".msg_success h2"), 2, { left: -100 }, "-=1")
 				.from($(".msg_success p"), 2, { right: -100 }, "-=2")
 				.to($(".msg_success"), 2, { opacity: 0 }, "+=2")
-				.to($(".contact_form"), 2, { opacity: 1 })
+				.to($(".contact_form, .contact_form_mobile"), 2, { opacity: 1 })
 	$(".form-control").val("");
 <% else %>
 	// Checks for errors and display them

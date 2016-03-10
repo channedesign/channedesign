@@ -18,16 +18,16 @@ $(document).ready(function() {
 		.to($(".logo_text_circle, .logo_text_circle_mobile"), 1.5, { rotation: 240, ease: Elastic.easeInOut.config(1.5, 0.8), delay: 1 })
 		.to($(".logo_text_circle, .logo_text_circle_mobile"), 1.5, { rotation: 360, ease: Elastic.easeInOut.config(1.5, 0.8), delay: 1 })
 	var mobileHomeTween = new TimelineMax()
-		.from($(".logo_text_channe_mobile"), 2, { opacity: 0, left: "-10%" })
-		.from($(".logo_text_design_mobile"), 2, { opacity: 0, right: "-10%" }, "-=2")
+		.from($(".logo_text_channe_mobile"), 2, { opacity: 0, left: "-20%", delay: 0.5 })
+		.from($(".logo_text_design_mobile"), 2, { opacity: 0, right: "-20%" }, "-=2")
 	var mobileHomeTween2 = new TimelineMax()
-		.to($(".logo_text_channe_mobile"), 3, { left: "-15%", top: "0%", rotation: -360, scale: 0.5 })
-		.to($(".logo_text_design_mobile"), 3, { right: "-15%", top: "0%", rotation: 360, scale: 0.5 }, "-=3")
+		.to($(".logo_text_channe_mobile"), 3, { left: "-15%", top: "0%", rotation: -360, scale: 0.5, ease: Power3.easeInOut })
+		.to($(".logo_text_design_mobile"), 3, { right: "-15%", top: "0%", rotation: 360, scale: 0.5, ease: Power3.easeInOut }, "-=3")
 	// Build Scene
 	var homeScene = new ScrollMagic.Scene({ offset: 150 })
 							.setTween($(".logo_text"), 1, { top: "0%" })
 							.addTo(controller);
-	var homeSceneMobile = new ScrollMagic.Scene({ offset: 20 })
+	var homeSceneMobile = new ScrollMagic.Scene({ offset: 60 })
 							.setTween(mobileHomeTween2)
 							.addTo(controller);
 
