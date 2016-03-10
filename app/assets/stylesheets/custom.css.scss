@@ -154,13 +154,8 @@ a:hover {
 	z-index: -2;
 }
 
-.background_image  img {
+.background_image  img, .background_image_mobile  img {
 	position: absolute;
-	z-index: -1;
-}
-
-.background_image_mobile  img {
-	position: relative;
 	z-index: -1;
 }
 
@@ -178,6 +173,12 @@ a:hover {
 	left: 32.5%;
 }
 
+.logo_text_circle_mobile {
+	width: 57%;
+	top: 3.5%;
+	left: 21.5%;
+}
+
 .logo_text {
 	width: 28%;
 	top: 25%;
@@ -188,6 +189,20 @@ a:hover {
 }
 
 .logo_text_design {
+	right: 2%;
+}
+
+.logo_text_mobile {
+	width: 60%;
+}
+
+.logo_text_channe_mobile {
+	top: 50%;
+	left: 4%;
+}
+
+.logo_text_design_mobile {
+	top: 60%;
 	right: 2%;
 }
 
@@ -863,34 +878,30 @@ footer {
 		z-index: 3;
 	}
 	.service_box {
-		position: absolute;
-		width: 53%;
-		padding: 20px;
-		opacity: 0;
+		width: 83%;
+		left: 10%;
 	}
 	.service_web_design_div .service_box {
 		top: 1%;
-		left: 23%;
 	}
 	.service_responsive_div .service_box {
 		top: 16%;
-		left: 22%;
+		left: 5%;
 	}
 	.service_startup_div .service_box {
 		top: 36%;
-		left: 25%;
+		left: 7%;
 	}
 	.service_web_dev_div .service_box {
 		top: 52%;
-		left: 23%;
+		left: 12%;
 	}
 	.service_app_dev_div .service_box {
-		top: 71%;
-		left: 22%;
+		top: 69%;
+		left: 5%;
 	}
 	.service_branding_div .service_box {
-		top: 88%;
-		left: 21%;
+		top: 85%;
 	}
 	/*--------------------------WorkSteps-*/
 	.work_step_circuit_div {
