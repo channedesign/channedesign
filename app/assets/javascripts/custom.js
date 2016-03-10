@@ -176,14 +176,24 @@ $(document).ready(function() {
 		});
 	}
 	//--- WorkSteps Animation
-	var workStepsTween = new TimelineMax()
-		.from($(".iphone_pic"), 0.5, { opacity: 0, left: "5%", rotation: 45 })
-		.from($(".ipad_pic"), 0.5, { opacity: 0, left: "18%", rotation: -45 }, "-=0.5")
+	if ($(window).width() > 767) {
+		var workStepsTween = new TimelineMax()
+			.from($(".iphone_pic"), 0.5, { opacity: 0, left: "5%", rotation: 45 })
+			.from($(".ipad_pic"), 0.5, { opacity: 0, left: "18%", rotation: -45 }, "-=0.5")
 
-	var workStepsScenes = new ScrollMagic.Scene({ triggerElement: "#work_steps", offset: 900 })
-									.setTween(workStepsTween)
-									.addTo(controller);
-	
+		var workStepsScenes = new ScrollMagic.Scene({ triggerElement: "#work_steps", offset: 900 })
+										.setTween(workStepsTween)
+										.addTo(controller);
+	} else {
+		var workStepsTween = new TimelineMax()
+			.from($(".iphone_pic"), 0.5, { opacity: 0, left: "22%", rotation: 45 })
+			.from($(".ipad_pic"), 0.5, { opacity: 0, left: "65%", rotation: -45 }, "-=0.5")
+
+		var workStepsScenes = new ScrollMagic.Scene({ triggerElement: "#work_steps", offset: 1800 })
+										.setTween(workStepsTween)
+										.addTo(controller);
+	}
+
 	// Bubble Animation
 	//$tm.to($(".back"), 0.1, { scale: 0.5 });
 	$(".circles_div").hover(function() {
@@ -199,9 +209,15 @@ $(document).ready(function() {
 	var aboutsTween = new TimelineMax()
 		.from($(".profile_pic"), 0.5, { opacity: 0, top: -200 })
 		.from($(".this_guy_arrow_pic"), 0.5, { opacity: 0, right: -50, rotation: 720 })
-	var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: -100 })
+	if ($(window).width() > 767) {
+		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: -100 })
 								.setTween(aboutsTween)
 								.addTo(controller);						
+	} else {
+		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: 200 })
+								.setTween(aboutsTween)
+								.addTo(controller);	
+	}	
 
 	//--- Portfolios shadow animation
 	var $tm = TweenMax;

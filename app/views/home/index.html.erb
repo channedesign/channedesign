@@ -1,12 +1,20 @@
 <div id="home">
-	<div class="background_image">
+	<div class="background_image hide_in_xs">
 		<%= image_tag("HomeLogoCD.jpg", class: "image_100_width") %>
 		<%= image_tag("CercleLogoText.png", class: "logo_text_circle") %>
 		<%= image_tag("HomeChanne.png", class: "logo_text logo_text_channe") %>
 		<%= image_tag("HomeDesign.png", class: "logo_text logo_text_design") %>
 		<div class="overlay"></div>
 	</div>
-	<%= image_tag("HomeImage.png", class: "image_100_width home_image") %>
+	<div class="background_image_mobile hide_in_md">
+		<%= image_tag("MobileHomeLogoCD.jpg", class: "image_100_width") %>
+		<%= image_tag("CercleLogoText.png", class: "logo_text_circle_mobile") %>
+		<%= image_tag("HomeChanne.png", class: "logo_text_mobile logo_text_channe_mobile") %>
+		<%= image_tag("HomeDesign.png", class: "logo_text_mobile logo_text_design_mobile") %>
+		<div class="overlay"></div>
+	</div>
+	<%= image_tag("HomeImage.png", class: "image_100_width home_image hide_in_xs") %>
+	<%= image_tag("MobileHomeImage.png", class: "image_100_width home_image hide_in_md") %>
 
 	<div class="features text-center">
 		<div class="container">
