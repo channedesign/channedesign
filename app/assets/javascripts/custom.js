@@ -116,62 +116,62 @@ $(document).ready(function() {
 	} else {
 		// Series of hover animation functions mobile
 		$(".service_web_design_div").hover(function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, left: -150, rotation: -65, top: 50 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: 50, left: 200 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, left: "5%", rotation: -45, top: "0%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "4%", left: "50%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1 });
 		}, function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, left: -100, rotation: 0, top: 100 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: 0, left: 150 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, left: "10%", rotation: 0, top: "2%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: "1%", left: "35%" });
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0 });
 		});	
 
 		$(".service_responsive_div").hover(function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, top: -100, left: 50, zIndex: 1 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: 120, left: 0, zIndex: 0 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, top: "14%", left: "32%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "23%", left: "10%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1 });
 		}, function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, top: 0, left: 0, zIndex: 0 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: 20, left: 80, zIndex: 1 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, top: "16%", left: "22%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: "20%", left: "20%" });
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0 });
 		});	
 
 		$(".service_startup_div").hover(function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, left: 200, top: 60, rotation: 90 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: -50, left: -170 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, left: "65%", top: "36%", rotation: 90 });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "37%", left: "0%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
 		}, function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, left: 100, top: 100, rotation: 0 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: -100, left: -100 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, left: "45%", top: "38%", rotation: 0 });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: "35%", left: "10%" });
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});	
 
 		$(".service_web_dev_div").hover(function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, left: 120, top: -50, rotation: 45 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, left: -150, top: -100, rotation: -15 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, left: "50%", top: "53%", rotation: 45 });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, left: "0%", top: "53%", rotation: -15 });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
 		}, function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, left: 50, top: 100, rotation: 0 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, left: 0, top: -150, rotation: 0 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, left: "15%", top: "54%", rotation: 0 });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, left: "30%", top: "51%", rotation: 0 });
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});	
 
 		$(".service_app_dev_div").hover(function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, top: 400 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: -300 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.8, top: "78%", left: "35%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "65%", left: "5%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
 		}, function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, top: 300 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: -150, left: 50 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, top: "76%", left: "20%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: "68%", left: "20%" });
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});	
 
 		$(".service_branding_div").hover(function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, top: 100, left: 220 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: -50, left: -150 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 0.7, top: "96%", left: "55%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 0.4, top: "80%", left: "0%" });
 			$tm.to($(this).children(".service_box"), 1.5, { opacity: 1, zIndex: 2 });
 		}, function() {
-			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, top: 450, left: 150 });
-			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: 0, left: -100 });
+			$tm.to($(this).children(".title_pic"), 0.5, { opacity: 1, top: "90%", left: "40%" });
+			$tm.to($(this).children(".image_pic"), 0.5, { opacity: 1, top: "83%", left: "10%" });
 			$tm.to($(this).children(".service_box"), 0.5, { opacity: 0, zIndex: 0 });
 		});
 	}
