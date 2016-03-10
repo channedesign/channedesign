@@ -681,10 +681,11 @@ a:hover {
 
 .contact_form .btn-default {
 	color: #fff;
+	border: 1px solid #A9A9A9;
 }
 
 .contact_form .btn-default:hover {
-	color: #000;
+	color: #A9A9A9;
 	background-color: #CDF4CE;
 }
 
@@ -760,6 +761,9 @@ footer {
 /*----------------  767  ------------------*/
 
 @media (max-width: 767px) {
+	html, body {
+		overflow-x: hidden;
+	}
 	.hide_in_xs {
 		display: none;
 	}
@@ -780,19 +784,19 @@ footer {
 	}
 	.services_pic {
 		position: relative;
-		width: 40%;
+		width: 60%;
 	}
 	.title_pic1 {
-		top: -120px;
-		left: 70px;
+		top: 100px;
+		left: -100px;
 		z-index: 2;
-		width: 35%;
+		width: 55%;
 	}
 	.image_pic1 {
 		top: 0%;
-		left: 0%;
+		left: 150px;
 		z-index: 1;
-		width: 50%;
+		width: 70%;
 	}
 	.title_pic2 {
 		top: 0%;
@@ -800,55 +804,55 @@ footer {
 	}
 	.image_pic2 {
 		top: 20px;
-		left: 50px;
-		width: 60%;
+		left: 80px;
+		width: 80%;
 		z-index: 1;
 	}
 	.title_pic3 {
-		top: 0%;
-		left: 200px;
-		width: 28%;
+		top: 100px;
+		left: 100px;
+		width: 48%;
 		z-index: 2;
 	}
 	.image_pic3 {
-		top: 0%;
-		left: -130px;
-		width: 50%;
+		top: -100px;
+		left: -100px;
+		width: 70%;
 		z-index: 1;
 	}
 	.title_pic4 {
-		top: -70px;
-		left: 100px;
+		top: 100px;
+		left: 50px;
 		z-index: 2;
 	}
 	.image_pic4 {
-		bottom: 0%;
-		left: -20px;
-		width: 55%;
+		top: -150px;
+		left: 0px;
+		width: 75%;
 		z-index: 1;
 	}
 	.title_pic5 {
-		top: 20px;
-		left: 150px;
-		width: 45%;
+		top: 300px;
+		left: 0px;
+		width: 65%;
 		z-index: 2;
 	}
 	.image_pic5 {
-		top: -50px;
-		left: -50px;
-		width: 50%;
+		top: -150px;
+		left: 50px;
+		width: 80%;
 		z-index: 1;
 	}
 	.title_pic6 {
-		top: 0%;
-		left: 200px;
-		width: 35%;
+		top: 450px;
+		left: 150px;
+		width: 55%;
 		z-index: 2;
 	}
 	.image_pic6 {
 		top: 0%;
 		left: -100px;
-		width: 50%;
+		width: 70%;
 		z-index: 1;
 	}
 	.service_box {
@@ -858,32 +862,32 @@ footer {
 		opacity: 0;
 	}
 	.service_web_design_div .service_box {
-		top: 0%;
-		left: 23%;
+		top: 2%;
+		left: 27%;
 	}
 
 	.service_responsive_div .service_box {
-		top: 16%;
+		top: 18%;
 		left: 22%;
 	}
 
 	.service_startup_div .service_box {
-		top: 35%;
+		top: 36%;
 		left: 20%;
 	}
 
 	.service_web_dev_div .service_box {
-		top: 50%;
+		top: 52%;
 		left: 20%;
 	}
 
 	.service_app_dev_div .service_box {
-		top: 68.5%;
+		top: 71%;
 		left: 22%;
 	}
 
 	.service_branding_div .service_box {
-		top: 85%;
+		top: 88%;
 		left: 21%;
 	}
 	.contact_form {
