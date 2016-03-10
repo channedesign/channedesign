@@ -207,6 +207,10 @@ $(document).ready(function() {
 	 		$tm.to($(this).children(".front"), 0.5, { scale: 0 });
 			$tm.to($(this).children(".back"), 0.5, { scale: 1.2 });
 	 	}); 
+	 	$(".circles_div").on("tap", function() {
+	 		$tm.to($(this).children(".front"), 0.5, { scale: 1 });
+			$tm.to($(this).children(".back"), 0.5, { scale: 0.5});
+	 	});
 	} else {
 		$(".circles_div").hover(function() {
 			$tm.to($(this).children(".front"), 0.5, { scale: 0 });
