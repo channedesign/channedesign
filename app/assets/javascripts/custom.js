@@ -1,9 +1,5 @@
 $(document).ready(function() {
 
-	// Init Fast click
-	//$(function() {
-   	//	FastClick.attach(document.body);
-	//});
 
 	//$(".fullHeight").css("min-height", $(window).height());
 
@@ -197,21 +193,29 @@ $(document).ready(function() {
 			.from($(".iphone_pic"), 0.5, { opacity: 0, left: "22%", rotation: 45 })
 			.from($(".ipad_pic"), 0.5, { opacity: 0, left: "65%", rotation: -45 }, "-=0.5")
 
-		var workStepsScenes = new ScrollMagic.Scene({ triggerElement: "#work_steps", offset: 1800 })
+		var workStepsScenes = new ScrollMagic.Scene({ triggerElement: "#work_steps", offset: 1500 })
 										.setTween(workStepsTween)
 										.addTo(controller);
 	}
 
 	// Bubble Animation
-	//$tm.to($(".back"), 0.1, { scale: 0.5 });
-	$(".circles_div").hover(function() {
-		$tm.to($(this).children(".front"), 0.5, { scale: 0 });
-		$tm.to($(this).children(".back"), 0.5, { scale: 1.2 });
-	}, function() {
-		$tm.to($(this).children(".front"), 0.5, { scale: 1 });
-		$tm.to($(this).children(".back"), 0.5, { scale: 0.5});
-	});	
- 
+	var bubble_back = new TimelineMax()
+		.to($(".back"), 0.1, { scale: 0.5 })
+	
+ 	if (Modernizr.touchevents) {
+	 	$(".circles_div").on("tap", function() {
+	 		$tm.to($(this).children(".front"), 0.5, { scale: 0 });
+			$tm.to($(this).children(".back"), 0.5, { scale: 1.2 });
+	 	}); 
+	} else {
+		$(".circles_div").hover(function() {
+			$tm.to($(this).children(".front"), 0.5, { scale: 0 });
+			$tm.to($(this).children(".back"), 0.5, { scale: 1.2 });
+		}, function() {
+			$tm.to($(this).children(".front"), 0.5, { scale: 1 });
+			$tm.to($(this).children(".back"), 0.5, { scale: 0.5});
+		});	
+	}
 
 	//--- Abouts Animation	
 	var aboutsTween = new TimelineMax()
