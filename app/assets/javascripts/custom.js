@@ -27,7 +27,7 @@ $(document).ready(function() {
 	var homeScene = new ScrollMagic.Scene({ offset: 150 })
 							.setTween($(".logo_text"), 1, { top: "0%" })
 							.addTo(controller);
-	var homeSceneMobile = new ScrollMagic.Scene({ offset: 60 })
+	var homeSceneMobile = new ScrollMagic.Scene({ offset: 50 })
 							.setTween(mobileHomeTween2)
 							.addTo(controller);
 
