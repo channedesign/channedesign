@@ -24,12 +24,15 @@ $(document).ready(function() {
 	var mobileHomeTween = new TimelineMax()
 		.from($(".logo_text_channe_mobile"), 2, { opacity: 0, left: "-10%" })
 		.from($(".logo_text_design_mobile"), 2, { opacity: 0, right: "-10%" }, "-=2")
+	var mobileHomeTween2 = new TimelineMax()
+		.to($(".logo_text_channe_mobile"), 3, { left: "-15%", top: "0%", rotation: -360, scale: 0.5 })
+		.to($(".logo_text_design_mobile"), 3, { right: "-15%", top: "0%", rotation: 360, scale: 0.5 }, "-=3")
 	// Build Scene
 	var homeScene = new ScrollMagic.Scene({ offset: 150 })
 							.setTween($(".logo_text"), 1, { top: "0%" })
 							.addTo(controller);
-	var homeSceneMobile = new ScrollMagic.Scene({ offset: 10 })
-							.setTween(mobileHomeTween)
+	var homeSceneMobile = new ScrollMagic.Scene({ offset: 20 })
+							.setTween(mobileHomeTween2)
 							.addTo(controller);
 
 	//--- Services Animation
