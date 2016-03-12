@@ -169,6 +169,54 @@ a:hover {
 	height: 100%;
 }
 
+.dashed_line_pic {
+	position: absolute;
+	width: 5%;
+	top: 100%;
+}
+
+.dashed_line_pic1 {
+	left: 7.6%;
+}
+
+.dashed_line_pic2 {
+	left: 20.6%;
+}
+
+.dashed_line_pic3 {
+	left: 57.5%;
+}
+
+.dashed_line_pic4 {
+	left: 77.5%;
+}
+
+.end_line_pic {
+	position: absolute;
+	width: 1%;
+	opacity: 0;
+}
+
+.wifi_pic {
+	top: 44.5%;
+	left: 9.6%;
+}
+
+.cog_pic {
+	top: 49.5%;
+	left: 22.6%;
+}
+
+.light_pic {
+	top: 69.5%;
+	left: 59.5%;
+}
+
+.phone_pic {
+	top: 44.5%;
+	left: 79.5%;
+}
+
 .logo_text_circle {
 	width: 37%;
 	top: 2%;
@@ -258,8 +306,8 @@ a:hover {
 }
 
 .logoBootstrap {
-	width:40px;
-	height:45px;
+	width:35px;
+	height:40px;
 }
 
 .logoROR {
@@ -270,10 +318,16 @@ a:hover {
 
 .modal-dialog-website {
 	width: 60%;
+	margin: auto;
 }
 
 .modal-dialog-logo {
 	width: 50%;
+	margin: auto;
+}
+
+.modal-dialog-logo h2, .modal-dialog-logo h4 {
+	font-weight: 100;
 }
 
 .modal-body {
@@ -292,31 +346,34 @@ a:hover {
 }
 
 .VaraReeseHeader {
-	color: #f5f5f5;
-	background-image: image-url("varaModal.jpg");
+	color: #fff;
+	background-image: image-url("varaModal.png");
 	background-size: cover;
 	background-position: center bottom;
+	h2, h4 {font-weight: 100;}
 }
 
 .MicchkaBellisuHeader {
-	color: #f5f5f5;
+	color: #000;
 	background-image: image-url("micchkaModal.jpg");
 	background-size: cover;
 	background-position: center bottom;
+	h2, h4 {font-weight: 100;}
 }
 
 .SkiPandaHeader {
-	color: #f5f5f5;
+	color: #fff;
 	background-image: image-url("gleeModal.jpg");
 	background-size: cover;
 	background-position: center;
 }
 
 .CamilleSkubichJewelryHeader {
-	color: #505050;
+	color: #000;
 	background-image: image-url("skubichModal.jpg");
 	background-size: cover;
 	background-position: center bottom;
+	h2, h4 {font-weight: 100;}
 }
 
 .CamilleSkubichJewelryHeader h2 {
@@ -328,7 +385,7 @@ a:hover {
 }
 
 .logo_header {
-	height: 100px;
+	min-height: 100px;
 }
 
 .btn-default {
@@ -568,6 +625,18 @@ a:hover {
 	top: -70px;
 	width: 40%;
 }
+
+.abouts_logos {
+	margin-top: 50px;
+}
+
+.logo1{
+	width:50px;
+	height:35px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
 
 /*----------------  Contacts  ------------------*/
 
@@ -816,6 +885,12 @@ footer {
 	}
 	.hidden_div {
 		display: block;
+	}
+	.modal-dialog-website {
+		width: 90%;
+	}
+	.modal-dialog-logo {
+		width: 70%;
 	}
 	/*--------------------------Services-*/
 	.services_pic {

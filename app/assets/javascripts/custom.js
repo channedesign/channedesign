@@ -17,6 +17,24 @@ $(document).ready(function() {
 	$tl.to($(".logo_text_circle, .logo_text_circle_mobile"), 1.5, { rotation: 120, ease: Elastic.easeInOut.config(1.5, 0.8), delay: 1 })
 		.to($(".logo_text_circle, .logo_text_circle_mobile"), 1.5, { rotation: 240, ease: Elastic.easeInOut.config(1.5, 0.8), delay: 1 })
 		.to($(".logo_text_circle, .logo_text_circle_mobile"), 1.5, { rotation: 360, ease: Elastic.easeInOut.config(1.5, 0.8), delay: 1 })
+	var homeTween = new TimelineMax({repeat: -1})
+		.to($(".dashed_line_pic1"), 2, { top: "49%", ease: Back.easeOut.config(1) })
+		.to($(".wifi_pic"), 1, { opacity: 1, scale: 5, ease: Elastic.easeOut.config(2.5, 0.8) })
+		.to($(".wifi_pic"), 2, { opacity: 0, scale: 0, ease: Power4.easeOut }, "+=1")
+		.to($(".dashed_line_pic1"), 2, { top: "100%", ease: Back.easeIn.config(1) }, "-=2")
+		.to($(".dashed_line_pic4"), 2, { top: "49%", ease: Back.easeOut.config(1) }, "-=1.5")
+		.to($(".phone_pic"), 1, { opacity: 1, scale: 5, ease: Elastic.easeOut.config(2.5, 0.8) })	
+		.to($(".phone_pic"), 2, { opacity: 0, scale: 0, ease: Power4.easeOut }, "+=1")
+		.to($(".dashed_line_pic4"), 1, { top: "100%", ease: Back.easeIn.config(1) }, "-=2")	
+		.to($(".dashed_line_pic2"), 2, { top: "54%", ease: Back.easeOut.config(1) }, "-=1.5")
+		.to($(".cog_pic"), 1, { opacity: 1, scale: 5, ease: Elastic.easeOut.config(2.5, 0.8) })
+		.to($(".cog_pic"), 2, { opacity: 0, scale: 0, ease: Power4.easeOut }, "+=1")
+		.to($(".dashed_line_pic2"), 2, { top: "100%", ease: Back.easeIn.config(1) }, "-=2")
+		.to($(".dashed_line_pic3"), 2, { top: "74%", ease: Back.easeOut.config(1) }, "-=1.5")
+		.to($(".light_pic"), 1, { opacity: 1, scale: 5, ease: Elastic.easeOut.config(2.5, 0.8) })
+		.to($(".light_pic"), 2, { opacity: 0, scale: 0, ease: Power4.easeOut }, "+=1")		
+		.to($(".dashed_line_pic3"), 2, { top: "100%", ease: Back.easeIn.config(1) }, "-=2")
+
 	var mobileHomeTween = new TimelineMax()
 		.from($(".logo_text_channe_mobile"), 2, { opacity: 0, left: "-20%", delay: 0.5 })
 		.from($(".logo_text_design_mobile"), 2, { opacity: 0, right: "-20%" }, "-=2")
@@ -222,7 +240,18 @@ $(document).ready(function() {
 		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: 200 })
 								.setTween(aboutsTween)
 								.addTo(controller);	
-	}	
+	}
+	// Logo animation
+	var logoArray = [];
+	// add img to array
+	$(".abouts_logos img").each(function() {
+		var id = this.id;
+		var selector = '$("#' + id + '")'
+		logoArray.push(selector)
+	});	
+
+	//TweenMax.staggerTo([$("#logo_ruby"),$("#logo_html"),$("#logo_css"),$("#logo_js"),$("#logo_rwd"),$("#logo_php"),$("#logo_sql"),$("#logo_bs")], 2, { opacity: 0 }, 1);
+
 
 	//--- Portfolios shadow animation
 	var $tm = TweenMax;
