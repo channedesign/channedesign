@@ -42,7 +42,7 @@ gem "font-awesome-rails"
 gem 'jquery-turbolinks'
 gem 'mail_form'
 gem 'gmaps4rails'
-gem 'fastclick-rails'
+gem 'acts_as_list'
 
 
 

@@ -1,0 +1,12 @@
+<% @portfolios.each do |portfolio| %>
+	<% if portfolio.portfolio_type == "Web" %>
+		<div class="col-sm-6 marginBottom50">
+			<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), edit_portfolio_path(portfolio)) %>
+		</div>
+	<% end %>
+	<% if portfolio.portfolio_type == "Logo" || portfolio.portfolio_type == "BigLogo" %>
+		<div class="<%= portfolio.portfolio_type == 'Logo' ? 'col-sm-3' : 'col-sm-6' %> marginBottom50">
+			<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), edit_portfolio_path(portfolio)) %>
+		</div>
+	<% end %>
+<% end %>
