@@ -62,7 +62,7 @@ a:hover {
 	margin-bottom: 50px;
 }
 
-.hide_in_md {
+.hide_in_md, .hide_in_md_landscape {
 	display: none;
 }
 
@@ -144,8 +144,6 @@ a:hover {
 	background: #979EAF;
 	color: rgba(255, 255, 255, 1);
 }
-
-
 
 /*----------------  Home  ------------------*/
 
@@ -996,6 +994,14 @@ footer {
 	}
 }
 
+@media (max-width: 767px) and (orientation: portrait) { 
+	.hide_in_xs_portrait {
+		display: none;
+	}
+	.hide_in_md_landscape {
+		display: block;
+	}
+}
 
 /*----------------  600  ------------------*/
 
