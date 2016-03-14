@@ -1,11 +1,5 @@
 $(document).ready(function() {
 
-
-	//$(".fullHeight").css("min-height", $(window).height());
-
-	// The cave to hide
-	//$(".msg_success").hide();
-
 	//*******************
 	// Animation Center *
 	//*******************
@@ -254,6 +248,8 @@ $(document).ready(function() {
 	}, function() {
 		$tm.to($(this), 0.3, { boxShadow: "0px 0px 0px" });	
 	});
+	// Portfolio init filter animation
+	$('#Container').mixItUp();
 
 	//--- Contacts Animation
 	var contactsTween = new TimelineMax()
@@ -264,9 +260,6 @@ $(document).ready(function() {
 	var contactsScene = new ScrollMagic.Scene({ triggerElement: "#contacts", offset: 350 })
 								.setTween(contactsTween)
 								.addTo(controller);
-
-
-
 
 
 	//--- Navbar
@@ -315,7 +308,6 @@ $(document).ready(function() {
 	         .end().filter('[href="#'+id+'"]').children().addClass("active");
 	   }                   
 	});
-	
 	
 
 	//--- Contacts

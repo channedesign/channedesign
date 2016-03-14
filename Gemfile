@@ -43,6 +43,7 @@ gem 'jquery-turbolinks'
 gem 'mail_form'
 gem 'gmaps4rails'
 gem 'acts_as_list'
+gem 'mixitup_rails'
 
 
 

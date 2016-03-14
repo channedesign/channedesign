@@ -281,10 +281,20 @@ a:hover {
 	-webkit-border-radius: 10px;
 }
 
+#portfolios .active {
+	background-color: #fff;
+	color: #000;
+	font-weight: 700;
+}
+
 .portfolios_dots {
 	position: relative;
 	top: 10px;
 	font-size: 3em;
+}
+
+#portfolios .all {
+	color: #505050;
 }
 
 #portfolios .web {
@@ -298,6 +308,18 @@ a:hover {
 #portfolios .text-muted {
 	position: relative;
 	top: -30px;
+}
+
+.filter_text {
+	cursor: pointer;
+}
+
+.filter_text:hover {
+	font-weight: 700;
+}
+
+#Container .mix{
+	display: none;
 }
 
 .logo {
@@ -410,13 +432,6 @@ a:hover {
 #services {
 	background-color: #CDF4CE;
 }
-
-/*.background_transition {
-	height: 400px;
-	background-image: image-url("mountaincitylinesbg.jpg");
-	background-size: cover;
-	background-attachment: fixed;
-}*/
 
 .services {
 	position: relative;
@@ -632,6 +647,11 @@ a:hover {
 
 .abouts_logos {
 	margin-top: 50px;
+}
+
+.abouts_logos_mobile {
+	margin-top: 0px;
+	margin-bottom: 50px;
 }
 
 .logo1{

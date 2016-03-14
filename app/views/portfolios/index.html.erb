@@ -3,20 +3,20 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 title">
 				<h1>Portfolio</h1>
-				<p class="lead">Check out my most recent work!</p>
-				<p class="text-muted"><span><span class="portfolios_dots web">&bull;</span>Websites</span>&nbsp;&nbsp;<span><span class="portfolios_dots logo">&bull;</span>Logos</span></p>
+				<p class="lead">Check out some of my most recent work!</p>
+				<p class="text-muted"><span class="filter" data-filter="all"><span class="filter_text"><span class="portfolios_dots all">&bull;</span>All</span></span>&nbsp;&nbsp;<span class="filter" data-filter=".category-1"><span class="filter_text"><span class="portfolios_dots web">&bull;</span>Websites</span></span>&nbsp;&nbsp;<span class="filter" data-filter=".category-2"><span class="filter_text"><span class="portfolios_dots logo">&bull;</span>Logos</span></span></p>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row" id="Container">
 			<% @portfolios.each do |portfolio| %>
 				<% if portfolio.portfolio_type == "Web" %>
-					<div class="col-sm-6 marginBottom50">
+					<div class="col-sm-6 marginBottom50 mix category-1">
 						<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ')}Modal" }) %>
 					</div>
 					<%= render "portfolios/modal_web", name: portfolio.title.delete(" "), title: portfolio.title, why_text: portfolio.why_text, design_text: portfolio.design_text.html_safe, features_text: simple_format(portfolio.features_text), url:portfolio.url %>
 				<% end %>
 				<% if portfolio.portfolio_type == "Logo" || portfolio.portfolio_type == "BigLogo" %>
-					<div class="<%= portfolio.portfolio_type == 'Logo' ? 'col-sm-3' : 'col-sm-6' %> marginBottom50">
+					<div class="<%= portfolio.portfolio_type == 'Logo' ? 'col-sm-3' : 'col-sm-6' %> marginBottom50 mix category-2">
 						<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ').delete("&")}LogoModal" }) %>
 					</div>
 					<%= render "portfolios/modal_logo", name: portfolio.title.delete(" ").delete("&"), title: portfolio.title, image: portfolio.image_modal %>

@@ -107,6 +107,7 @@ GEM
     mimemagic (0.3.0)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
+    mixitup_rails (0.0.3)
     multi_json (1.11.2)
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
@@ -209,6 +210,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   mail_form
+  mixitup_rails
   paperclip
   passenger
   pg
