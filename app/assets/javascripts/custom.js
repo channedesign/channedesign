@@ -228,29 +228,23 @@ $(document).ready(function() {
 	});	
 
 
-	//--- Abouts Animation	
+	//--- Abouts Animation
+	// Cache img to array for logo animation
+	var logoArray = $(".abouts_logos img").toArray();
+	// Set tween	
 	var aboutsTween = new TimelineMax()
 		.from($(".profile_pic"), 0.5, { opacity: 0, top: -200 })
 		.from($(".this_guy_arrow_pic"), 0.5, { opacity: 0, right: -50, rotation: 720 })
+		.staggerFrom(logoArray, 0.5, { opacity: 0, scale: 0, ease: Back.easeOut.config(3) }, 0.2, "-=1")
 	if ($(window).width() > 767) {
-		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: -100 })
+		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: 100 })
 								.setTween(aboutsTween)
 								.addTo(controller);						
 	} else {
-		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: 200 })
+		var aboutsScene = new ScrollMagic.Scene({ triggerElement: "#abouts", offset: 250 })
 								.setTween(aboutsTween)
 								.addTo(controller);	
 	}
-	// Logo animation
-	var logoArray = [];
-	// add img to array
-	$(".abouts_logos img").each(function() {
-		var id = this.id;
-		var selector = '$("#' + id + '")'
-		logoArray.push(selector)
-	});	
-
-	//TweenMax.staggerTo([$("#logo_ruby"),$("#logo_html"),$("#logo_css"),$("#logo_js"),$("#logo_rwd"),$("#logo_php"),$("#logo_sql"),$("#logo_bs")], 2, { opacity: 0 }, 1);
 
 
 	//--- Portfolios shadow animation

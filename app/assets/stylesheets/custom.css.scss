@@ -376,8 +376,12 @@ a:hover {
 	h2, h4 {font-weight: 100;}
 }
 
-.CamilleSkubichJewelryHeader h2 {
-	margin-top: -10px;
+.ChaletsHideawayHeader {
+	color: #000;
+	background-image: image-url("ChaletHideawayModal.png");
+	background-size: cover;
+	background-position: center bottom;
+	h2, h4 {font-weight: 100;}
 }
 
 .logoModal {
