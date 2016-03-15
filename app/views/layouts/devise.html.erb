@@ -10,17 +10,13 @@
 </head>
 <body>
   <div class="fullHeight">
-    <div class="admin_nav_div col-sm-8 col-sm-offset-2 text-center">
-      <%= link_to("Website", root_path, class: "btn btn-default") %>
-      <%= link_to("Admin", admins_path, class: "btn btn-default") %>
-  	 <%= link_to((fa_icon "sign-out"), destroy_admin_session_path, :method => :delete, class: "btn btn-default") %>
-    </div>
     <div class="container">
-      <div class="row text-center <%= "marginTopBottom300" unless current_page?(admins_portfolios_path) %>">
+      <div class="row text-center marginTopBottom150">
   	     <%= yield %>
       </div>
     </div>
   </div>
 	<%= render "layouts/footer" %>
+
 </body>
 </html>

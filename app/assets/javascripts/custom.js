@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$(".fullHeight").css("min-height", $(window).height() - 40);
+
 	//*******************
 	// Animation Center *
 	//*******************

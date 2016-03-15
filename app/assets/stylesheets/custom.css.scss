@@ -22,6 +22,10 @@ a:hover {
 	color: #fff;
 }
 
+.btn-default:hover {
+	background-color: #fff;
+}
+
 .hidden_div {
 	display: none;
 }
@@ -40,6 +44,11 @@ a:hover {
 
 .marginBottom50 {
 	margin-bottom: 50px;
+}
+
+.marginTopBottom300 {
+	margin-top: 300px;
+	margin-bottom: 300px;
 }
 
 .marginTopBottom150 {
@@ -69,8 +78,29 @@ a:hover {
 /*----------------  Admins  ------------------*/
 
 .admin_index_link {
-	font-size: 5em;
+	font-size: 7em;
+	font-weight: 100;
+	color: #505050;
+	letter-spacing: 5px;
 }
+
+.fullHeight {
+	background-color: #D8F3EF;
+}
+
+.login_form_div{
+	border: 1px solid #505050;
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	padding: 20px;
+	background-image: image-url("LoginAdmin.jpg");
+	background-size: cover;
+	a { color: #505050; }
+	a:hover { color: #000; }
+}
+
+
 
 /*------------------     Shared   ---------------------*/
 
