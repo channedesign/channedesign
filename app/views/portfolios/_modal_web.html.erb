@@ -13,13 +13,11 @@
 		      	<p><%= design_text %></p>
 		      	<p class="lead">Features:</p>
 		      	<p><%= features_text %></p>
-		        <p class="lead">Language utilised for this project:</p>
+		        <p class="lead">Language and Framework utilised for this project:</p>
 		        <div class="text-center">
-		        	<%= image_tag("html5.png", class: "logo") %>
-			      	<%= image_tag("css3.png", class: "logo") %>
-			      	<%= image_tag("jquery.png", class: "logo") %>
-			      	<%= image_tag("bootstrap.png", class: "logoBootstrap") %>
-			      	<%= image_tag("rubyonrails.png", class: "logoROR") %>
+		        	<% logos.each do |logo| %>
+		        		<%= image_tag(logo.image, class: 'logo') %>
+		        	<% end %>
 			    </div>
 	    	</div>
 	    	<div class="modal-footer">

@@ -16,7 +16,7 @@
   	 <%= link_to((fa_icon "sign-out"), destroy_admin_session_path, :method => :delete, class: "btn btn-default") %>
     </div>
     <div class="container">
-      <div class="row text-center <%= "marginTopBottom300" unless current_page?(admins_portfolios_path) %>">
+      <div class="row text-center ">
   	     <%= yield %>
       </div>
     </div>

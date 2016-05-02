@@ -13,7 +13,7 @@
 					<div class="col-sm-6 marginBottom50 mix category-1">
 						<%= link_to(image_tag(portfolio.image, class: "image_100_width portfolios_image"), "", data: { toggle: "modal", target: "##{portfolio.title.delete(' ')}Modal" }) %>
 					</div>
-					<%= render "portfolios/modal_web", name: portfolio.title.delete(" "), title: portfolio.title, why_text: portfolio.why_text, design_text: portfolio.design_text.html_safe, features_text: simple_format(portfolio.features_text), url:portfolio.url %>
+					<%= render "portfolios/modal_web", name: portfolio.title.delete(" "), title: portfolio.title, why_text: portfolio.why_text, design_text: portfolio.design_text.html_safe, features_text: simple_format(portfolio.features_text), url:portfolio.url, logos: portfolio.logos %>
 				<% end %>
 				<% if portfolio.portfolio_type == "Logo" || portfolio.portfolio_type == "BigLogo" %>
 					<div class="<%= portfolio.portfolio_type == 'Logo' ? 'col-sm-3' : 'col-sm-6' %> marginBottom50 mix category-2">

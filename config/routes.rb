@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :logos
   get "contacts/new", to: "main#index"
   resources "contacts", only: [:new, :create]
   get "admins/portfolios"

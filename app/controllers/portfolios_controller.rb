@@ -45,6 +45,6 @@ class PortfoliosController < ApplicationController
 
 	private
 		def portfolio_params
-			params.require(:portfolio).permit(:title, :why_text, :design_text, :features_text, :url, :image, :image_modal, :portfolio_type, :position) 
+			params.require(:portfolio).permit(:title, :why_text, :design_text, :features_text, :url, :image, :image_modal, :portfolio_type, :position, {logo_ids: []}) 
 		end
 end

@@ -1,5 +1,6 @@
 <div class="col-sm-12 marginBottom50">
 	<%= link_to((fa_icon "plus 4x"), new_portfolio_path, class: "btn btn-default") %>
+	<%= link_to('Add language', new_logo_path) %>
 </div>
 <% @portfolios.each do |portfolio| %>
 	<% if portfolio.portfolio_type == "Web" %>
