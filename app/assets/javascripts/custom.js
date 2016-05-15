@@ -346,11 +346,11 @@ $(document).ready(function() {
 		    	{
 			       "lat": 40.743541,
 			        "lng": -73.990745,
-			        "picture": {
-			          "url": "https://s3.amazonaws.com/channedesign/logo/MapPointerCD.png",
-			          "width":  50,
-			          "height": 88
-			        },
+			        // "picture": {
+			        //   "url": "https://s3.amazonaws.com/channedesign/logo/MapPointerCD.png",
+			        //   "width":  50,
+			        //   "height": 88
+			        // },
 			    }
 	  		]);
 	  	handler.bounds.extendWith(markers);
