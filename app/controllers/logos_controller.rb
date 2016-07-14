@@ -4,7 +4,7 @@ class LogosController < ApplicationController
 
 
 	def new 
-		@logos = Logo.all
+		@logos = Logo.all.includes(:portfolios)
 		@logo = Logo.new
 	end	
 

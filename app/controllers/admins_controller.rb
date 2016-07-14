@@ -6,6 +6,6 @@ class AdminsController < ApplicationController
 	end
 
 	def portfolios
-		@portfolios = Portfolio.order(position: "ASC")
+		@portfolios = Portfolio.order_by_position
 	end
 end

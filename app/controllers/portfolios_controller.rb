@@ -2,7 +2,7 @@ class PortfoliosController < ApplicationController
 	before_action :authenticate_admin!, except: [:index]
 	layout "admin", except: [:index]
 	def index
-		@portfolios = Portfolio.order(position: "ASC")
+		@portfolios = Portfolio.order_by_position.includes(:logos)
 	end
 
 	def show

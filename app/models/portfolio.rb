@@ -1,4 +1,5 @@
 class Portfolio < ActiveRecord::Base
+	extend CommonScopes
 		has_and_belongs_to_many :logos
 
 		has_attached_file :image, styles: { thumb: '100x100>' }
