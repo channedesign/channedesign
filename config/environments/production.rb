@@ -90,12 +90,11 @@ config.action_mailer.default_url_options = { :host => 'channedesign.herokuapp.co
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
+  address: "email-smtp.us-west-2.amazonaws.com",
   port: 587,
-  domain: ENV["GMAIL_DOMAIN"],
-  authentication: "plain",
+  authentication: :login,
   enable_starttls_auto: true,
-  user_name: ENV["GMAIL_USERNAME"],
-  password: ENV["GMAIL_PASSWORD"]
+  user_name: ENV["SES_SMTP_USERNAME"],
+  password: ENV["SES_SMTP_PASSWORD"]
   }
 end
